@@ -1,0 +1,68 @@
+Practice Problem – 7A: Student Analyzer 🎓
+Requirements
+
+Create a class Student.
+
+Attributes
+name
+marks
+Constructor
+marks 0 se 100 ke beech hone chahiye.
+Warna ValueError.
+
+Methods
+grade()
+90+ → A
+80–89 → B
+70–79 → C
+60–69 → D
+Below 60 → F
+__str__()
+
+Main Program
+User se 5 students ka input lo.
+Sabhi Student objects ko ek list me store karo.
+for loop se sabka:
+Name
+Marks
+Grade
+print karo.
+Main Challenge (Object Comparison)
+
+Sorting, max(), min() use nahi karna.
+
+Find:
+
+🏆 Highest marks wala Student object.
+😔 Lowest marks wala Student object.
+
+End me print karo:
+
+Topper:
+Name : ...
+Marks : ...
+
+Lowest:
+Name : ...
+Marks : ...
+Bonus ⭐
+
+Count karo:
+
+Kitne students Grade A me hain.
+Kitne Grade B me.
+Kitne Grade C me.
+Kitne Grade D me.
+Kitne Grade F me.
+Rules
+❌ max()
+❌ min()
+❌ sort()
+✅ Object comparison
+✅ List of objects
+✅ Loops
+
+Is problem ka maksad sirf object comparison ko itna practice karana hai ki agle problems me tum bina soche likh do:
+
+if current.marks > topper.marks:
+    topper = current
