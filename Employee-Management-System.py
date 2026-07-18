@@ -37,6 +37,9 @@ class Manager(Employee):
 
 
 total_manager = int(input("Enter Total Managers :> "))
+
+if total_manager <= 0:
+    raise ValueError("At least one manager required")
 employee_objects = [] 
 employee_details = {}
 
