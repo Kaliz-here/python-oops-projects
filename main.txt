@@ -1,0 +1,4 @@
+Search manager by ID (dictionary ka use karke)
+Increment salary of a specific manager (ID se manager dhoondhkar increment_salary() call karna)
+Print updated manager details
+Yearly salary dikhana (yearly_salary() method use karke)
