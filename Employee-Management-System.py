@@ -62,7 +62,7 @@ for highest in employee_objects:
     if highest.salary > highest_salary.salary:
         highest_salary = highest
 
-print(f"\n| The highest Salary Of Manager |")
+print(f"\n| highest Salary Of Manager |")
 print(highest_salary)
 
 # Find lowest salary of manager
@@ -70,7 +70,7 @@ for lowest in employee_objects:
     if lowest.salary < lowest_salary.salary:
         lowest_salary = lowest
 
-print(f"\n| The Lowest Salary Of Manager |")
+print(f"\n| Lowest Salary Of Manager |")
 print(lowest_salary)
 
 #find manager using manager ID 
