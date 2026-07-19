@@ -6,3 +6,14 @@ Increment salary of a specific manager
 Print updated manager details
 
 Yearly salary dikhana (yearly_salary() method use karke)
+
+
+
+Chhoti Improvements (Baad me kar sakte ho)
+
+Ye errors nahi hain, bas code ko aur professional bana denge:
+
+Duplicate Manager ID allow na ho.
+Salary hike ke baad "Salary Updated Successfully" message.
+Highest/Lowest salary ke liye alag function bana sakte ho.
+Menu-driven program (1. Add, 2. Search, 3. Hike, etc.).
