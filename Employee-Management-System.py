@@ -58,6 +58,7 @@ highest_salary = employee_objects[0]
 lowest_salary = employee_objects[0]
 
 # Find highest salary of manager
+
 for highest in employee_objects:
     if highest.salary > highest_salary.salary:
         highest_salary = highest
@@ -73,7 +74,8 @@ for lowest in employee_objects:
 print(f"\n| Lowest Salary Of Manager |")
 print(lowest_salary)
 
-#find manager using manager ID 
+#find manager using manager ID
+print("\n\nFind Manager")
 find_manager = int(input("\nEnter Manager ID : "))
 if find_manager in employee_details:
     print("\n| Manager found |")
@@ -81,4 +83,13 @@ if find_manager in employee_details:
 
 else:
     print("| Manager not found |")
+
+# increment salary hike for specific manager
+print("\n\nSalary Hike Programe")
+manager_id = int(input("\nEnter Manager ID : "))
+salary_hike = int(input("Enter Hike Percentage : "))
+
+if manager_id in employee_details:
+    employee_details[manager_id].increment_salary(salary_hike)
+    print(employee_details[manager_id])
 
