@@ -85,7 +85,7 @@ else:
     print("| Manager not found |")
 
 # increment salary hike for specific manager
-print("\n\nSalary Hike Programe")
+print("\n\nSalary Hike Programme")
 manager_id = int(input("\nEnter Manager ID : "))
 salary_hike = int(input("Enter Hike Percentage : "))
 
@@ -93,3 +93,11 @@ if manager_id in employee_details:
     employee_details[manager_id].increment_salary(salary_hike)
     print(employee_details[manager_id])
 
+else:
+    print("Manager Not Found")
+
+# print yearly and monthly salary with name
+for info in employee_objects:
+    print(f"\n\nName : {info.name}")
+    print(f"Monthly salary : {info.salary}")
+    print(f"Yealry salary : {info.yearly_salary()}")
