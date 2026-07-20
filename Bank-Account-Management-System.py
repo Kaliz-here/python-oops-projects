@@ -17,6 +17,11 @@ class BankAccount:
             raise ValueError("Balance must be positive value")
 
     # Add deposite method
-    def deposite(self, ammount):
-        self.balance += ammount
-        print(f"Fund Added : {ammount}")
+    def deposite(self, amount):
+        self.balance += amount
+        print(f"Fund Added : {amount}")
+
+    # Add Withdraw method
+    def withdraw(self, amount):
+        self.balance -= amount
+        print(f"Withdraw {amount}")
