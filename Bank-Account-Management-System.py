@@ -5,7 +5,7 @@ class BankAccount:
         self.holder_name = holder_name
         # validation on account number
         if(len(account_number) < 15):
-            raise ValueError("Account number must be 10 digits")
+            raise ValueError("Account number must be 15 digits")
 
         else:
             self.account_number = account_number
@@ -17,11 +17,18 @@ class BankAccount:
             raise ValueError("Balance must be positive value")
 
     # Add deposite method
-    def deposite(self, amount):
-        self.balance += amount
-        print(f"Fund Added : {amount}")
+    def deposit(self, amount):
+        if(amount <= 0):
+            raise ValueError("Invalid deposit money")
+        else:
+            self.balance += amount
+            print(f"Available Balance : {self.balance}")
+
 
     # Add Withdraw method
     def withdraw(self, amount):
-        self.balance -= amount
-        print(f"Withdraw {amount}")
+        if(self.balance >= amount):
+            self.balance -= amount
+            print(f"Withdraw Amount : {amount}")
+        else:
+            raise ValueError("Insufficient Balance")
