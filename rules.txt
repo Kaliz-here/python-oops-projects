@@ -1,0 +1,69 @@
+Attributes
+Account Number
+Holder Name
+Balance
+
+Validation
+Account Number > 0
+Balance >= 0
+
+Methods :
+Deposit
+Withdraw
+Transfer
+Check Balance
+__str__
+
+Main Program
+User se multiple accounts lo.
+
+Store in:
+
+List
+Dictionary
+
+Example:
+
+account_objects = []
+account_details = {}
+
+Features :
+Add Accounts
+Search Account by Account Number
+Deposit Money
+Withdraw Money
+Transfer Money
+Richest Account
+Poorest Account
+Print All Accounts
+
+
+
+Ye wahi requirements hain jo maine project start karte waqt di thi. 👇
+
+BankAccount Class
+✅ __init__()
+✅ deposit()
+⏳ withdraw()
+⏳ transfer()
+⏳ check_balance()
+⏳ __str__()
+
+Validation
+✅ Account number validation
+✅ Balance validation
+⬜ Deposit amount validation
+⬜ Withdraw amount validation
+⬜ Transfer amount validation
+
+Main Program
+⬜ Multiple account objects
+⬜ Store in list
+⬜ Store in dictionary
+⬜ Search account
+⬜ Richest account
+⬜ Poorest account
+⬜ Deposit to specific account
+⬜ Withdraw from specific account
+⬜ Transfer between two accounts
+⬜ Print all accounts
