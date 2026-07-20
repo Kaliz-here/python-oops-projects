@@ -32,3 +32,14 @@ class BankAccount:
             print(f"Withdraw Amount : {amount}")
         else:
             raise ValueError("Insufficient Balance")
+
+    # Add transfer fund method
+    def transfer(self, account_holder, account_number, amount):
+        pass
+
+    # Add __str__ method
+    def __str__(self):
+        details = f"\nName: {self.holder_name}\n"
+        details += f"Account Number : {self.account_number}\n"
+        details += f"Balance : {self.balance}"
+        return details
