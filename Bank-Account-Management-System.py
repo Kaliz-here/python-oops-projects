@@ -43,3 +43,27 @@ class BankAccount:
         details += f"Account Number : {self.account_number}\n"
         details += f"Balance : {self.balance}"
         return details
+
+user_object_list = []
+user_object_dict = {}
+
+# Conditions for actions
+def actions():
+    print("""
+        1. Check Balance
+        2. Transfer Money
+        3. Account Details
+        4. Exit session
+    """)
+
+# create object and store in list
+while True:
+    while True:
+        # create account
+        if 
+        account_holder_name = input("Enter your name : ")
+        account_holder_number = int(input("Enter bank account number : "))
+
+        print("Minimum Balance 2000")
+        balance = int(input("Enter Balance : "))
+        

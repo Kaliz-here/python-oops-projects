@@ -58,7 +58,6 @@ highest_salary = employee_objects[0]
 lowest_salary = employee_objects[0]
 
 # Find highest salary of manager
-
 for highest in employee_objects:
     if highest.salary > highest_salary.salary:
         highest_salary = highest
