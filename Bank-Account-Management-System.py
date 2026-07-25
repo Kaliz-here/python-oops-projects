@@ -60,7 +60,6 @@ def actions():
 while True:
     while True:
         # create account
-        if 
         account_holder_name = input("Enter your name : ")
         account_holder_number = int(input("Enter bank account number : "))
 
