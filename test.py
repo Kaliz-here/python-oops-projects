@@ -1,6 +1,5 @@
-start = 0
-while True:
-    print(start)
-    if start == 12000:
-        break
-    start += 1
+a = int(input(' : '))
+b = 0
+while(b < a):
+    print(b)
+    b += 1

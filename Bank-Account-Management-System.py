@@ -5,7 +5,7 @@ class BankAccount:
         self.holder_name = holder_name
         # validation on account number
         if(len(account_number) < 15):
-            raise ValueError("Account number must be 15 digits")
+            raise ValueError(f"Account number must be 15 digits | You enterd ({len(account_number)}) numbers")
 
         else:
             self.account_number = account_number
@@ -44,22 +44,17 @@ class BankAccount:
         details += f"Balance : {self.balance}"
         return details
 
-account_object_list = []
-account_object_dict = {}
+account_object_list = [] # list of account holders
+account_object_dict = {} # dict of account holder
+
+account = int(input("How many account : "))
 start = 0
 
-# Conditions for actions
-def actions():
-    print("""
-        1. Check Balance
-        2. Transfer Money
-        3. Account Details
-        4. Exit session
-    """)
+while(start < account):
 
-while True:
-    actions()
-    account_name = input("Enter Name : ")
+    print(f"Account --> {start}")
+
+    account_name = input("\nEnter Name : ")
     account_number = input("Enter account number : ")
     account_balance = float(input("Enter Balance : "))
 
@@ -67,6 +62,7 @@ while True:
     accounts = BankAccount(account_name, account_number, account_balance)
     account_object_list.append(accounts)
 
+    start += 1 #how many account add in list and dict
 
-for i in account_object_list:
-    print(i)
+# for i in account_object_list:
+#     print(i)
