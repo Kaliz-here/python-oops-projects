@@ -48,9 +48,9 @@ account_object_list = [] # list of account holders
 account_object_dict = {} # dict of account holder
 
 account = int(input("How many account : "))
-start = 0
+start = 1
 
-while(start < account):
+while(start <= account):
 
     print(f"Account --> {start}")
 
