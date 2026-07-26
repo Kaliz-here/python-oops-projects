@@ -44,8 +44,9 @@ class BankAccount:
         details += f"Balance : {self.balance}"
         return details
 
-user_object_list = []
-user_object_dict = {}
+account_object_list = []
+account_object_dict = {}
+start = 0
 
 # Conditions for actions
 def actions():
@@ -56,13 +57,16 @@ def actions():
         4. Exit session
     """)
 
-# create object and store in list
 while True:
-    while True:
-        # create account
-        account_holder_name = input("Enter your name : ")
-        account_holder_number = int(input("Enter bank account number : "))
+    actions()
+    account_name = input("Enter Name : ")
+    account_number = input("Enter account number : ")
+    account_balance = float(input("Enter Balance : "))
 
-        print("Minimum Balance 2000")
-        balance = int(input("Enter Balance : "))
-        
+    # add account in list
+    accounts = BankAccount(account_name, account_number, account_balance)
+    account_object_list.append(accounts)
+
+
+for i in account_object_list:
+    print(i)
