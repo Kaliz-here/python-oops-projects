@@ -62,7 +62,21 @@ while(start <= account):
     accounts = BankAccount(account_name, account_number, account_balance)
     account_object_list.append(accounts)
 
+    # add account in dict
+    account_object_dict[account_number] = accounts
+
     start += 1 #how many account add in list and dict
 
-# for i in account_object_list:
-#     print(i)
+print("""
+        1. Deposit Money
+        2. Withdraw Money
+        3. Transfer Money
+
+        4. Search Account Holder (Administrator Only)
+        5. Richest Account (Administrator Only)
+        6. Poorest Account (Administrator Only)
+        7. Print All Accounts (Administrator Only)
+""")
+
+user_choice = int(input("Enter Your Choice : "))
+
