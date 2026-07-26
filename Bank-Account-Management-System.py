@@ -47,16 +47,16 @@ class BankAccount:
 account_object_list = [] # list of account holders
 account_object_dict = {} # dict of account holder
 
-account = int(input("How many account : "))
+account = int(input("How many account -> "))
 start = 1
 
 while(start <= account):
 
     print(f"Account --> {start}")
 
-    account_name = input("\nEnter Name : ")
-    account_number = input("Enter account number : ")
-    account_balance = float(input("Enter Balance : "))
+    account_name = input("\nEnter Name -> ")
+    account_number = input("Enter account number -> ")
+    account_balance = float(input("Enter Balance -> "))
 
     # add account in list
     accounts = BankAccount(account_name, account_number, account_balance)
@@ -67,16 +67,51 @@ while(start <= account):
 
     start += 1 #how many account add in list and dict
 
-print("""
-        1. Deposit Money
-        2. Withdraw Money
-        3. Transfer Money
+# Function for employee
+def employee():
+    while True:
+        print("""
+                1. Search Account Holder (Administrator Only)
+                2. Richest Account (Administrator Only)
+                3. Poorest Account (Administrator Only)
+                4. Print All Accounts (Administrator Only)
+                5. Exit
+        """)
 
-        4. Search Account Holder (Administrator Only)
-        5. Richest Account (Administrator Only)
-        6. Poorest Account (Administrator Only)
-        7. Print All Accounts (Administrator Only)
-""")
+        user_choice = int(input("\nEnter Your Choice -> "))
 
-user_choice = int(input("Enter Your Choice : "))
+        # search in dict using account_number
+        if user_choice == 1:
+            ac_number = input("Enter account number -> ")
+            if(ac_number in account_object_dict):
+                print(account_object_dict[ac_number])
+        
+            else:
+                print("Account Not Found..!")
 
+        elif(user_choice == 5):
+            break
+
+
+# Function for Customer
+def custormer():
+    while True:
+        print("""
+                    1. Deposit Money
+                    2. Withdraw Money
+                    3. Transfer Money
+                    4. Exit
+            """)
+
+        user_choice = int(input("\nEnter Your Choice -> "))
+
+# Get verification from user
+print("\n\nC - Customer | E - Employee")
+verification = input("\nAre you customer or employee -> ")
+
+if verification == "E" or verification == "e":
+    employee()
+elif verification == "C" or verification == "c":
+    custormer()
+else:
+    print("Enter Valid Input")
