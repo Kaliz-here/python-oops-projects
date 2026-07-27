@@ -142,13 +142,13 @@ def custormer():
 
 
         
-# # Get verification from user
-# print("\n\nC - Customer | E - Employee")
-# verification = input("\nAre you customer or employee -> ")
+# Get verification from user
+print("\n\nC - Customer | E - Employee")
+verification = input("\nAre you customer or employee -> ")
 
-# if verification == "E" or verification == "e":
-#     employee()
-# elif verification == "C" or verification == "c":
-#     custormer()
-# else:
-#     print("Enter Valid Input")
+if verification == "E" or verification == "e":
+    employee()
+elif verification == "C" or verification == "c":
+    custormer()
+else:
+    print("Enter Valid Input")
