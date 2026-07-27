@@ -52,7 +52,7 @@ start = 1
 
 while(start <= account):
 
-    print(f"Account --> {start}")
+    print(f"\n\nAccount --> {start}")
 
     account_name = input("\nEnter Name -> ")
     account_number = input("Enter account number -> ")
@@ -80,7 +80,7 @@ def employee():
 
         user_choice = int(input("\nEnter Your Choice -> "))
 
-        # search in dict using account_number
+        # Search Account Holder
         if user_choice == 1:
             ac_number = input("Enter account number -> ")
             if(ac_number in account_object_dict):
@@ -89,8 +89,16 @@ def employee():
             else:
                 print("Account Not Found..!")
 
+        # Richest Account
         elif(user_choice == 2):
-            pass
+            temp_var = account_object_list[0]
+            for richest in account_object_list:
+                if(richest.balance > account_object_list.balance):
+                    temp_var = richest
+                    print(" | Top richest account |")
+                    print(temp_var)
+
+                
 
         elif(user_choice == 3):
             pass
