@@ -93,19 +93,19 @@ def employee():
         elif(user_choice == 2):
             richest_temp = account_object_list[0]
             for richest in account_object_list:
-                if(richest.balance > account_object_list.balance):
+                if(richest.balance > richest_temp.balance):
                     richest_temp = richest
-                    print(" | Richest Account |")
-                    print(richest_temp)
-                           
+            print(" | Richest Account |")
+            print(richest_temp)
+
         # Poorest Account
         elif(user_choice == 3):
             poorest_temp = account_object_list[0]
-            for richest in account_object_list:
-                if(richest.balance < account_object_list.balance):
-                    poorest_temp = richest
-                    print(" | Poorest Account |")
-                    print(poorest_temp)
+            for poorest in account_object_list:
+                if(poorest.balance < poorest_temp.balance):
+                    poorest_temp = poorest
+            print(" | Poorest Account |")
+            print(poorest_temp)
 
 
         elif(user_choice == 4):
@@ -141,13 +141,13 @@ def custormer():
 
 
         
-# Get verification from user
-print("\n\nC - Customer | E - Employee")
-verification = input("\nAre you customer or employee -> ")
+# # Get verification from user
+# print("\n\nC - Customer | E - Employee")
+# verification = input("\nAre you customer or employee -> ")
 
-if verification == "E" or verification == "e":
-    employee()
-elif verification == "C" or verification == "c":
-    custormer()
-else:
-    print("Enter Valid Input")
+# if verification == "E" or verification == "e":
+#     employee()
+# elif verification == "C" or verification == "c":
+#     custormer()
+# else:
+#     print("Enter Valid Input")
