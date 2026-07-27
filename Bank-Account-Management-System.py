@@ -116,6 +116,9 @@ def employee():
         elif(user_choice == 5):
             break
 
+        else:
+            print("\nInvalid Input..!")
+
 # Function for Customer
 def custormer():
     while True:
@@ -123,7 +126,8 @@ def custormer():
                     1. Deposit Money
                     2. Withdraw Money
                     3. Transfer Money
-                    4. Exit
+                    4. Cheak Balance
+                    5. Exit
             """)
 
         user_choice = int(input("\nEnter Your Choice -> "))
@@ -138,7 +142,13 @@ def custormer():
             pass
         
         elif(user_choice == 4):
+            pass
+
+        elif(user_choice == 5):
             break
+
+        else:
+            print("\nInvalid Input..!")
 
 
         
