@@ -89,6 +89,15 @@ def employee():
             else:
                 print("Account Not Found..!")
 
+        elif(user_choice == 2):
+            pass
+
+        elif(user_choice == 3):
+            pass
+
+        elif(user_choice == 4):
+            pass
+
         elif(user_choice == 5):
             break
 
@@ -105,6 +114,20 @@ def custormer():
 
         user_choice = int(input("\nEnter Your Choice -> "))
 
+        if (user_choice == 1):
+            pass
+
+        elif(user_choice == 2):
+                    pass
+        
+        elif(user_choice == 3):
+            pass
+        
+        elif(user_choice == 4):
+            break
+
+
+        
 # Get verification from user
 print("\n\nC - Customer | E - Employee")
 verification = input("\nAre you customer or employee -> ")
