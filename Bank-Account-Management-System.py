@@ -107,13 +107,14 @@ def employee():
             print(" | Poorest Account |")
             print(poorest_temp)
 
-
+        # Print All Accounts
         elif(user_choice == 4):
-            pass
+            for all_accounts in account_object_list:
+                print(all_accounts)
 
+        # break loop
         elif(user_choice == 5):
             break
-
 
 # Function for Customer
 def custormer():
