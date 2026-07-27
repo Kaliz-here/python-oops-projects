@@ -151,7 +151,6 @@ def custormer():
             print("\nInvalid Input..!")
 
 
-        
 # Get verification from user
 print("\n\nC - Customer | E - Employee")
 verification = input("\nAre you customer or employee -> ")
