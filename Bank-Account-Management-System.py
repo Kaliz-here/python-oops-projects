@@ -91,17 +91,22 @@ def employee():
 
         # Richest Account
         elif(user_choice == 2):
-            temp_var = account_object_list[0]
+            richest_temp = account_object_list[0]
             for richest in account_object_list:
                 if(richest.balance > account_object_list.balance):
-                    temp_var = richest
-                    print(" | Top richest account |")
-                    print(temp_var)
-
-                
-
+                    richest_temp = richest
+                    print(" | Richest Account |")
+                    print(richest_temp)
+                           
+        # Poorest Account
         elif(user_choice == 3):
-            pass
+            poorest_temp = account_object_list[0]
+            for richest in account_object_list:
+                if(richest.balance < account_object_list.balance):
+                    poorest_temp = richest
+                    print(" | Poorest Account |")
+                    print(poorest_temp)
+
 
         elif(user_choice == 4):
             pass
