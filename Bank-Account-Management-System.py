@@ -1,7 +1,7 @@
 class BankAccount:
     # init atributes
     # step 1
-    def __init__(self, holder_name: str, account_number: str, balance: float):
+    def __init__(self, holder_name: str, account_number: str, balance: int):
         self.holder_name = holder_name
         # validation on account number
         if(len(account_number) < 15):
@@ -34,7 +34,7 @@ class BankAccount:
             raise ValueError("Insufficient Balance")
 
     # Add transfer fund method
-    def transfer(self, account_holder, account_number, amount):
+    def transfer(self, receiver_account, amount):
         pass
 
     # Add __str__ method
@@ -156,11 +156,17 @@ def custormer():
         
         elif(user_choice == 3):
             pass
-        
+
+        # add check balance feature for customer
         elif(user_choice == 4):
-            pass
+            find_account = input("Enter account number : ")
+            if find_account in account_object_dict:
+                account = account_object_dict[find_account]
+                print(account)
+
 
         elif(user_choice == 5):
+            print("Thank You..!")
             break
 
         else:
