@@ -29,6 +29,7 @@ class BankAccount:
         if(self.balance >= amount):
             self.balance -= amount
             print(f"Withdraw Amount : {amount}")
+            print(f"Current Balance : {self.balance}")
         else:
             raise ValueError("Insufficient Balance")
 
@@ -125,13 +126,13 @@ def custormer():
                     1. Deposit Money
                     2. Withdraw Money
                     3. Transfer Money
-                    4. Cheak Balance
+                    4. Check Balance
                     5. Exit
             """)
 
         user_choice = int(input("\nEnter Your Choice -> "))
 
-        # deposit method
+        # implemented deposit feature
         if (user_choice == 1):
             find_account = input("Enter account number : ")
             if find_account in account_object_dict:
@@ -142,10 +143,16 @@ def custormer():
             else:
                 print("Invalid account number")
 
-
-
+        # implemented deposit feature
         elif(user_choice == 2):
-                    pass
+            find_account = input("Enter account number : ")
+            if find_account in account_object_dict:
+                account = account_object_dict[find_account]
+                amount = int(input("\nEnter Amount : "))
+                account.withdraw(amount)
+
+            else:
+                print("Invalid account number")
         
         elif(user_choice == 3):
             pass
