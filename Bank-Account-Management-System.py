@@ -22,8 +22,7 @@ class BankAccount:
             raise ValueError("Invalid deposit money")
         else:
             self.balance += amount
-            print(f"Available Balance : {self.balance}")
-
+            print(f"Current Balance : {self.balance}")
 
     # Add Withdraw method
     def withdraw(self, amount):
@@ -132,8 +131,18 @@ def custormer():
 
         user_choice = int(input("\nEnter Your Choice -> "))
 
+        # deposit method
         if (user_choice == 1):
-            pass
+            find_account = input("Enter account number : ")
+            if find_account in account_object_dict:
+                account = account_object_dict[find_account]
+                amount = int(input("\nEnter Amount : "))
+                account.deposit(amount)
+ 
+            else:
+                print("Invalid account number")
+
+
 
         elif(user_choice == 2):
                     pass
