@@ -164,8 +164,24 @@ def custormer():
                 print("Invalid account number")
         
         elif(user_choice == 3):
-            pass
+            sender_acc = input("Enter Sender Account Number : ")
+            receiver_acc = input("Enter Receiver Account Number : ")
 
+            if sender_acc not in account_object_dict:
+                print("Sender Account Not Found")
+                continue
+
+            if receiver_acc not in account_object_dict:
+                print("Receiver Account Not Found")
+                continue
+
+            amount = float(input("Enter Amount : "))
+
+            sender = account_object_dict[sender_acc]
+            receiver = account_object_dict[receiver_acc]
+
+            sender.transfer(receiver, amount)
+            
         # add check balance feature for customer
         elif(user_choice == 4):
             find_account = input("Enter account number : ")
