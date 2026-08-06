@@ -35,7 +35,16 @@ class BankAccount:
 
     # Add transfer fund method
     def transfer(self, receiver_account, amount):
-        pass
+        if amount <= 0:
+            raise ValueError("Invalid transfer amount")
+
+        if self.balance < amount:
+            raise ValueError("Insufficient Balance")
+
+        self.balance -= amount
+        receiver_account.balance += amount
+        print("\nTransfer Successful")
+        print(f"Transfer amount : {amount}")
 
     # Add __str__ method
     def __str__(self):
