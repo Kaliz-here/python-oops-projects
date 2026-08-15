@@ -1,0 +1,87 @@
+Project 2: Library Management System
+
+Create a Class: Book
+Attributes
+title
+author
+isbn
+available (default = True)
+borrower_name (default = None)
+Methods
+
+
+1. borrow_book(borrower_name)
+Check if the book is available.
+If available:
+Set available = False
+Store the borrower's name.
+Print "Book borrowed successfully."
+Otherwise:
+Raise an error or print "Book is already issued."
+
+2. return_book()
+Set:
+available = True
+borrower_name = None
+Print "Book returned successfully."
+3. __str__()
+
+Example output:
+Title : Python Programming
+Author : John Smith
+ISBN : 123456789
+Status : Available
+
+or
+
+Title : Python Programming
+Author : John Smith
+ISBN : 123456789
+Status : Issued to Rahul
+Data Structures
+
+Use:
+
+book_list = []
+book_dict = {}
+
+Dictionary key:
+
+isbn
+
+Employee Menu
+1. Search Book
+2. Add Book
+3. Remove Book
+4. Print All Books
+5. Total Books
+6. Available Books
+7. Exit
+
+
+Customer Menu
+1. Borrow Book
+2. Return Book
+3. Search Book
+4. View Available Books
+5. Exit
+
+
+Validation
+ISBN must be unique.
+Title cannot be empty.
+Author cannot be empty.
+Concepts You Will Practice
+Classes and Objects
+Constructors (__init__)
+
+
+Instance Methods
+__str__()
+Validation
+Lists
+Dictionaries
+Searching
+Updating Object State
+Menu-driven Programming
+Object Interaction
