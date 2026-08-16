@@ -11,6 +11,9 @@ class LibrarySystem:
         else:
             self.isbn = isbn
 
+        self.available = available
+        self.borrow_name = self.borrow_name
+
     # Book borrow method
     def borrow_book(borrowr_name):
         pass
@@ -20,3 +23,40 @@ class LibrarySystem:
 
     def __str__(self):
         pass
+
+
+
+def employee_menu():
+    while True:
+        print("""
+                1. Search Book
+                2. Add Book
+                3. Remove Book
+                4. Print All Book
+                5. Total Books
+                5. Available Books
+                7. Exit""")
+
+def customer_menu():
+    while True:
+        print("""
+                1. Borrow Book
+                2. Return Book
+                3. Search Book
+                4. View Available Book
+                5. Exit
+                """)
+
+
+print("\n1. Employee Menu")
+print("2. Customer Menu")
+userchoice = int(input("\nEnter your choice : "))
+
+if(userchoice == 1):
+    employee_menu()
+
+elif(userchoice == 2):
+    customer_menu()
+
+else:
+    print("Invalid userchoice..!")
