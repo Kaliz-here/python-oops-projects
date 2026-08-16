@@ -12,19 +12,23 @@ class LibrarySystem:
             self.isbn = isbn
 
         self.available = available
-        self.borrow_name = self.borrow_name
+        self.borrower_name = borrower_name
 
     # Book borrow method
-    def borrow_book(borrowr_name):
+    def borrow_book(self, borrower_name):
         pass
 
-    def return_book():
+    def return_book(self):
         pass
 
     def __str__(self):
         pass
 
-
+books_count = int(input("How many books add in library : "))
+start = 1
+while start <= books_count:
+    pass
+    start += 1
 
 def employee_menu():
     while True:
@@ -34,7 +38,7 @@ def employee_menu():
                 3. Remove Book
                 4. Print All Book
                 5. Total Books
-                5. Available Books
+                6. Available Books
                 7. Exit""")
 
 def customer_menu():

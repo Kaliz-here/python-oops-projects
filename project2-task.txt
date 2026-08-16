@@ -7,8 +7,9 @@ author
 isbn
 available (default = True)
 borrower_name (default = None)
-Methods
 
+
+Methods
 
 1. borrow_book(borrower_name)
 Check if the book is available.
@@ -19,11 +20,13 @@ Print "Book borrowed successfully."
 Otherwise:
 Raise an error or print "Book is already issued."
 
+
 2. return_book()
-Set:
-available = True
+Set: available = True
 borrower_name = None
 Print "Book returned successfully."
+
+
 3. __str__()
 
 Example output:
@@ -38,8 +41,9 @@ Title : Python Programming
 Author : John Smith
 ISBN : 123456789
 Status : Issued to Rahul
-Data Structures
 
+
+Data Structures
 Use:
 
 book_list = []
