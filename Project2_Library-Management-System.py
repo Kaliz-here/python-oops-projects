@@ -6,7 +6,7 @@ class LibrarySystem:
             self.title = title
             self.author = author
 
-        if(len(isbn) == 6):
+        if(len(isbn) != 6):
             raise ValueError("Invalid ISBN NO.")
         else:
             self.isbn = isbn
@@ -24,10 +24,24 @@ class LibrarySystem:
     def __str__(self):
         pass
 
-books_count = int(input("How many books add in library : "))
+book_list = []
+book_dict = {}
+
+books_count = int(input("\nHow many books add in library : "))
+
 start = 1
 while start <= books_count:
-    pass
+    title = input("Enter Title : ")
+    author = input("Enter Author : ")
+    isbn = input("Enter ISBN : ")
+
+    # add book in list
+    book = LibrarySystem(title, author, isbn, available=True, borrower_name=None)
+    book_list.append(book)
+
+    # add book in dict search using isbn
+    book_dict[isbn] = book
+
     start += 1
 
 def employee_menu():
