@@ -21,8 +21,15 @@ class LibrarySystem:
     def return_book(self):
         pass
 
+    # object ouput method
     def __str__(self):
-        pass
+        details = f"\Title: {self.title}\n"
+        details += f"Author : {self.author}\n"
+        details += f"ISBN : {self.isbn}\n"
+        details += f"Status : {self.available}"
+
+        return details
+        
 
 book_list = []
 book_dict = {}
